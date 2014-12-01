@@ -17,24 +17,12 @@
         Dim strQuestGuess As String = Me.txtQuestGuess.Text
         Dim strColorGuess As String = Me.txtColorGuess.Text
 
-        If strName = strNameGuess Then
+        If strName = strNameGuess And strQuest = strQuestGuess And strFavoriteColor = strColorGuess Then
+
             Me.lblQ1Answer.Text = "You may pass!!"
         Else
             Me.lblQ1Answer.Text = "You will die!!"
         End If
-
-        If strQuest = strQuestGuess Then
-            Me.lblQ2Answer.Text = "You may pass!!"
-        Else
-            Me.lblQ2Answer.Text = "You will die!!"
-        End If
-
-        If strFavoriteColor = strColorGuess Then
-            Me.lblQ3Answer.Text = "You may pass!!"
-        Else
-            Me.lblQ3Answer.Text = "You will die!!"
-        End If
-
 
     End Sub
 End Class
